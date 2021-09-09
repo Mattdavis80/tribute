@@ -17,6 +17,27 @@
             html{
                 background-color: bisque;
             }
+            .container {
+                position: fixed;
+                top: 0;
+                font-size: 15px;
+                font-family: "Oswald", sans-serif;
+                text-align: center;
+                min-height: 25px;
+                width: 100%;
+                background-color: grey;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            .nav1-image{
+                background-color: #F58B57;
+            }
+            .nav2-info{
+                background-color: #F58B57;
+            }
+            .nav3-footer{
+                background-color: #F58B57;
+            }
             #title{
                 text-align: center;
                 font-family: 'Oswald', sans-serif;
@@ -55,6 +76,17 @@
 
     <body>
         <main id="main">
+        <nav class="container">
+            <a class="nav1-image" href="#img-div">Image</a>
+
+            <a class="nav2-info" href="#tribute-info">Tribute Information</a>
+
+            <a class="nav3-footer"  href="#tribute-link">Additonal Information</a>
+        </nav>
+
+
+
+
 
         <h1 id="title">Kanye West:<br/> <i>The Most Influential</i></h1>
 
