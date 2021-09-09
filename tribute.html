@@ -44,10 +44,8 @@
                 background-color: #A75F3B;
             }
             #img-div{
-
             }
             #image{
-
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
@@ -60,41 +58,69 @@
                 font-family: "Oswald" sans-serif;
                 font-style: italic;
             }
-
-            #tribute-info{
+            #preface, h3{
+                font-family: "Oswald", sans-serif;
+                text-align: center;
+                font-size: 20px;
+            }
+            #tribute-info{ 
+                margin:auto;
+                width: 90%;
                 background-color: gainsboro;
                 text-align: center;
                 font-family: "Oswald", sans-serif;
                 font-size: 15px;
+                margin-bottom: 15px;
+                padding: 15px;
+
             }
             #tribute-link{
                 display: grid;
                 background-color: #7ACEC2;
+            }
+            a:hover{
+                background-color: gainsboro; 
+                font-style: italic;
+                color: black;
+
+            }
+            #disc{
+                margin: auto;
+                width: 90%;
+                display: grid;
+                grid-template-rows: 100px 100px 100px 100px 100px;
+                background-color: gray;
+            }
+            .album1{
+                background-color: green;
+                align-self: stretch;
+
+            }
+            .album2{
+                background-color: hotpink;
             }
         </style>
     </head>
 
     <body>
         <main id="main">
+
         <nav class="container">
             <a class="nav1-image" href="#img-div">Image</a>
-
-            <a class="nav2-info" href="#tribute-info">Tribute Information</a>
-
+            <a class="nav2-info" href="#tribute-info">Preface</a>
             <a class="nav3-footer"  href="#tribute-link">Additonal Information</a>
         </nav>
-
-
-
-
 
         <h1 id="title">Kanye West:<br/> <i>The Most Influential</i></h1>
 
         <div id="img-div">
             <img id="image" src="kanye-stage2.jpg" alt="Kanye West during his St. Palbo tour performing Father Stretch My Hands Pt.1">
+        </div>
             <p id="img-caption">
                 Kanye West performing "Father Stretch My Hands Pt.1" during the infamous St. Pablo tour.
             </p>
+
+            <h2 id="preface" >Preface</h2>
 
             <p id="tribute-info">
                 <br>Following a multi-platinum classic (College Dropout), he dropped a cinematic sophomore album (Late Registration) that yielded a chart-topping single about blood diamonds. For the first half of his career, Kanye brought politics back to pop music. No subject was too taboo. He mixed lust and religion, the sacred and profane. With a gift for synthesizing the most prominent and unseemly sides of American and pop culture, he penned turns of phrase as quotable as they were insightful. He’d found the lane between Mos Def and Mase and drove until the brakes fell off.</br>
@@ -104,10 +130,18 @@
                 <br>Sadly, so much of Kanye’s career post-Yeezus has been marred by music that pales in comparison to his earlier work. Hastily constructed/reworked albums and forgettable Wyoming listening parties signaled the end of his remarkable run. The brand outweighed the art. He designed some sneakers and reimagined Mugatu’s “Derelicte” campaign for the streetwear crowd. Nothing, however, sullied his musical legacy like his endorsement of Trump or his opinions on slavery. Whether it was the money or the fame or mental health, Kanye has become unhinged and out of touch, gone from progressive (mostly) to conservative (mostly). He went from the most captivating artist in pop music to someone many now ignore. People will talk about Kanye forever, but where do you begin?</br>
             </p>
 
+            <h3>Albums</h3>
+            
+            <div id="disc">
+                <p class="album1">Donda</p>
+                <p class="album2">Donda 2</p>
+
+            </div>
+
             <a href="https://en.wikipedia.org/wiki/Kanye_West" id="tribute-link" target="_blank">
                 Click here for more information about Kanye.
             </a>
-        </div>
+
         </main>
     </body>
 </html>
