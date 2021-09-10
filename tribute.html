@@ -40,6 +40,7 @@
             }
             #title{
                 text-align: center;
+                width: 100%;
                 font-family: 'Oswald', sans-serif;
                 background-color: #A75F3B;
             }
@@ -61,7 +62,7 @@
             #preface, h3{
                 font-family: "Oswald", sans-serif;
                 text-align: center;
-                font-size: 20px;
+                font-size: 40px;
             }
             #tribute-info{ 
                 margin:auto;
@@ -84,21 +85,56 @@
                 color: black;
 
             }
-            #disc{
-                margin: auto;
-                width: 90%;
-                display: grid;
-                grid-template-rows: 100px 100px 100px 100px 100px;
-                background-color: gray;
-            }
-            .album1{
-                background-color: green;
-                align-self: stretch;
+            .container2 {
+              font-size: 40px;
+              text-align: center;
+              font-family: "Oswald", sans-serif;
+              width: 90%;
+              margin: auto;
+              display: grid;
+              row-gap: 15px;
+              grid-template-rows: 70px 70px 70px 70px 70px 70px 70px 70px 70px 70px ;
+                
+
 
             }
-            .album2{
-                background-color: hotpink;
+            .d1{
+                background-color: #411218;
+                color: #e8982e;
             }
+            .d2{
+                background-color: #633119;
+                color: #c3ab14;
+            }
+            .d3{
+                background-color: #853082;
+                color: #ffffff;
+            }
+            .d4{
+                background-color: #A89C9A;
+            }
+            .d5{
+                background-color: #ce1a35;
+            }
+            .d6{
+                background-color: gainsboro;
+            }
+            .d7{
+                background-color:#f58b57;
+            }
+            .d8{
+                background-color: #285061;
+                color: #40b16d;
+            }
+            .d9{
+                background-color: #0202F7;
+                color: #d5b036;
+            }
+            .d10{
+                background-color: black;
+                color: white;
+            }
+
         </style>
     </head>
 
@@ -131,11 +167,18 @@
             </p>
 
             <h3>Albums</h3>
-            
-            <div id="disc">
-                <p class="album1">Donda</p>
-                <p class="album2">Donda 2</p>
 
+            <div class="container2">
+                <div class="d1"> The College Drop Out</div>
+                <div class="d2">Late Registration</div>
+                <div class="d3">Graduation</div>
+                <div class="d4">808s & Heartbreak</div>
+                <div class="d5">My Beautiful Dark Twisted Fantasy</div>
+                <div class="d6">Yeezus</div>
+                <div class="d7">The Life of Pablo</div>
+                <div class="d8">Ye</div>
+                <div class="d9">Jesus is King</div>
+                <div class="d10">Donda</div>
             </div>
 
             <a href="https://en.wikipedia.org/wiki/Kanye_West" id="tribute-link" target="_blank">
