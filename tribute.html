@@ -27,7 +27,7 @@
                 width: 100%;
                 background-color: grey;
                 display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
             }
             .nav1-image{
                 background-color: #F58B57;
@@ -35,7 +35,10 @@
             .nav2-info{
                 background-color: #F58B57;
             }
-            .nav3-footer{
+            .nav3-albums{
+                background-color: #F58B57;
+            }
+            .nav4-footer{
                 background-color: #F58B57;
             }
             #title{
@@ -63,6 +66,7 @@
                 font-family: "Oswald", sans-serif;
                 text-align: center;
                 font-size: 40px;
+                padding-top: 20px;
             }
             #tribute-info{ 
                 margin:auto;
@@ -85,7 +89,10 @@
                 color: black;
 
             }
-            .container2 {
+            #album-title{
+                padding-top: 25px;
+            }
+            #albums{
               font-size: 40px;
               text-align: center;
               font-family: "Oswald", sans-serif;
@@ -143,9 +150,11 @@
 
         <nav class="container">
             <a class="nav1-image" href="#img-div">Image</a>
-            <a class="nav2-info" href="#tribute-info">Preface</a>
-            <a class="nav3-footer"  href="#tribute-link">Additonal Information</a>
+            <a class="nav2-info" href="#preface">Preface</a>
+            <a class="nav3-albums"  href="#album-title">Albums</a>
+            <a class="nav4-footer"  href="#tribute-link">Additonal Information</a>
         </nav>
+
 
         <h1 id="title">Kanye West:<br/> <i>The Most Influential</i></h1>
 
@@ -166,9 +175,9 @@
                 <br>Sadly, so much of Kanye’s career post-Yeezus has been marred by music that pales in comparison to his earlier work. Hastily constructed/reworked albums and forgettable Wyoming listening parties signaled the end of his remarkable run. The brand outweighed the art. He designed some sneakers and reimagined Mugatu’s “Derelicte” campaign for the streetwear crowd. Nothing, however, sullied his musical legacy like his endorsement of Trump or his opinions on slavery. Whether it was the money or the fame or mental health, Kanye has become unhinged and out of touch, gone from progressive (mostly) to conservative (mostly). He went from the most captivating artist in pop music to someone many now ignore. People will talk about Kanye forever, but where do you begin?</br>
             </p>
 
-            <h3>Albums</h3>
+            <h3 id="album-title">Albums</h3>
 
-            <div class="container2">
+            <div id="albums">
                 <div class="d1"> The College Drop Out</div>
                 <div class="d2">Late Registration</div>
                 <div class="d3">Graduation</div>
