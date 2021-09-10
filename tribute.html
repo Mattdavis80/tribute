@@ -82,10 +82,14 @@
 
             }
             #tribute-link{
-                display: grid;
-                background-color: #7ACEC2;
+                background-color: #F58B57;
+                display:grid;
+                text-align: center;
+                width: 100%;
+                margin-top: 50px;
+                font-family: "Oswald", sans-serif;
             }
-            a:hover{
+            .container :hover{
                 background-color: gainsboro; 
                 font-style: italic;
                 color: black;
@@ -196,6 +200,10 @@
                 padding: 10px;
                 padding-top: 0px;
             }
+
+            a:visited{
+                color:blue;
+            }
         </style>
     </head>
 
@@ -203,9 +211,9 @@
         <main id="main">
 
         <nav class="container">
-            <a class="nav1-preface" href="#img-div">Preface</a>
-            <a class="nav2-albums" href="#preface">Albums</a>
-            <a class="nav3-bio"  href="#album-title">Biography</a>
+            <a class="nav1-preface" href="#preface">Preface</a>
+            <a class="nav2-albums" href="#album-title">Albums</a>
+            <a class="nav3-bio"  href="#biography">Biography</a>
             <a class="nav4-footer"  href="#tribute-link">Additonal Information</a>
         </nav>
 
@@ -244,7 +252,7 @@
                 <div class="d10">Donda</div>
             </div>
 
-            <h4>Biography</h4>
+            <h4 id="biography">Biography</h4>
             <p id="bio-info">Kanye Omari West (born June 8, 1977) is an American rapper, singer, songwriter, record producer, businessman, and fashion designer.</p>
             <p id="bio-info">Born in Atlanta and raised in Chicago, West gained notoriety as a producer for Roc-A-Fella Records in the early 2000s, producing 
                 singles for several popular artists. Intent on pursuing a solo career as a rapper, West released his debut album, The College Dropout (2004), 
