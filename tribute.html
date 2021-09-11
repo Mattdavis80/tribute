@@ -14,275 +14,337 @@
     
 
         <style>
-            html{
-                background-color: bisque;
-            }
-            .container {
-                position: fixed;
-                top: 0;
-                font-size: 15px;
-                font-family: "Oswald", sans-serif;
-                text-align: center;
-                min-height: 25px;
-                width: 100%;
-                background-color: grey;
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr 1fr;
-            }
-            .nav1-preface{
-                background-color: #F58B57;
-            }
-            .nav2-albums{
-                background-color: #F58B57;
-            }
-            .nav3-bio{
-                background-color: #F58B57;
-            }
-            .nav4-footer{
-                background-color: #F58B57;
-            }
-            #title{
-                text-align: center;
-                width: 100%;
-                font-family: 'Oswald', sans-serif;
-                background-color: #A75F3B;
-            }
-            #img-div{
-            }
-            #image{
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                max-width: 80%;
-                height: auto;
-                border-radius: 3px;
-            }
-            #img-caption{
-                text-align: center;
-                font-family: "Oswald" sans-serif;
-                font-style: italic;
-            }
-            #preface, h3, h4{
-                font-family: "Oswald", sans-serif;
-                text-align: center;
-                font-size: 40px;
-                padding-top: 20px;
-            }
-            #tribute-info{ 
-                margin:auto;
-                width: 90%;
-                background-color: gainsboro;
-                text-align: center;
-                font-family: "Oswald", sans-serif;
-                font-size: 15px;
-                margin-bottom: 15px;
-                padding: 10px;
-                padding-top: 0px;
+html {
+      background-color: bisque;
+      margin: 0;
+      padding: 0;
+    }
 
+    body {
+      margin: 0;
+      padding: 0;
+    }
 
-            }
-            #tribute-link{
-                background-color: #F58B57;
-                display:grid;
-                text-align: center;
-                width: 100%;
-                margin-top: 50px;
-                font-family: "Oswald", sans-serif;
-            }
-            .container :hover{
-                background-color: gainsboro; 
-                font-style: italic;
-                color: black;
+    .container {
+      position: fixed;
+      top: 0;
+      font-size: 15px;
+      font-family: "Oswald", sans-serif;
+      text-align: center;
+      min-height: 25px;
+      width: 100%;
+      background-color: grey;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      background-color: #f58b57;
+    }
 
-            }
-            #album-title{
-                padding-top: 25px;
-            }
-            .albums{
-              font-size: 40px;
-              text-align: center;
-              font-family: "Oswald", sans-serif;
-              width: 90%;
-              margin: auto;
-              display: grid;
-              row-gap: 15px;
-              grid-template-rows: 70px 70px 70px 70px 70px 70px 70px 70px 70px 70px ;
-                
+    #title {
+      text-align: center;
+      width: 100%;
+      font-family: 'Oswald', sans-serif;
+      background-color: #A75F3B;
+    }
 
+    #image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 80%;
+      height: auto;
+      border-radius: 3px;
+    }
 
-            }
-            .d1{
-                background-color: #411218;
-                color: #e8982e;
-            }
-            .d2{
-                background-color: #633119;
-                color: #c3ab14;
-            }
-            .d3{
-                background-color: #853082;
-                color: #ffffff;
-            }
-            .d4{
-                background-color: #A89C9A;
-            }
-            .d5{
-                background-color: #ce1a35;
-            }
-            .d6{
-                background-color: gainsboro;
-            }
-            .d7{
-                background-color:#f58b57;
-            }
-            .d8{
-                background-color: #285061;
-                color: #40b16d;
-            }
-            .d9{
-                background-color: #0202F7;
-                color: #d5b036;
-            }
-            .d10{
-                background-color: black;
-                color: white;
-            }
-    
-            .albums  .d1:hover{
-                background-color:#e8982e;
-                color: #411218;
-            }
-            .albums .d2:hover{
-                background-color: #c3ab14;
-                color: #633119;
-            }
-            .albums .d3:hover{
-                background-color: #ffffff;
-                color: #853082;
-            }
-            .albums .d4:hover{
-                background-color: black;
-                color: #A89C9A;
-            }
-            .albums .d5:hover{
-                background-color: black;
-                color: #ce1a35;
-            }
-            .albums .d6:hover{
-                background-color:black;
-                color: gainsboro;
-            }
-            .albums .d7:hover{
-                background-color: black;
-                color: #f58b57;
-            }
-            .albums .d8:hover{
-                background-color: #40b16d;
-                color: #285061;
-            }
-            .albums .d9:hover{
-                background-color: #d5b036;
-                color: #0202F7;
-            }
-            .albums .d10:hover{
-                background-color: white;
-                color: black;
-            }
+    #img-caption {
+      text-align: center;
+      font-family: "Oswald"sans-serif;
+      font-style: italic;
+    }
 
-            #bio-info{
-                margin:auto;
-                width: 90%;
-                background-color: gainsboro;
-                text-align: center;
-                font-family: "Oswald", sans-serif;
-                font-size: 15px;
-                margin-bottom: 15px;
-                padding: 10px;
-                padding-top: 0px;
-            }
+    #preface,
+    h3,
+    h4 {
+      font-family: "Oswald", sans-serif;
+      text-align: center;
+      font-size: 40px;
+      padding-top: 20px;
+    }
 
-            a:visited{
-                color:blue;
-            }
+    #tribute-info {
+      margin: 0 auto;
+      width: 90%;
+      background-color: gainsboro;
+      text-align: center;
+      font-family: "Oswald", sans-serif;
+      font-size: 25px;
+      margin-bottom: 50px;
+      padding: 50px;
+      padding: 5px;
+    }
+
+    #tribute-link {
+      background-color: #F58B57;
+      display: grid;
+      text-align: center;
+      width: 100%;
+      margin-top: 50px;
+      font-family: "Oswald", sans-serif;
+    }
+
+    .container :hover {
+      background-color: gainsboro;
+      font-style: italic;
+      color: black;
+    }
+
+    #album-title {
+      padding-top: 25px;
+    }
+
+    .albums {
+      font-size: 40px;
+      text-align: center;
+      font-family: "Oswald", sans-serif;
+      width: 90%;
+      margin: 0 auto;
+      display: grid;
+      row-gap: 15px;
+      grid-template-rows: 70px 70px 70px 70px 70px 70px 70px 70px 70px 70px;
+    }
+
+    .d1 {
+      background-color: #411218;
+      color: #e8982e;
+    }
+
+    .d2 {
+      background-color: #633119;
+      color: #c3ab14;
+    }
+
+    .d3 {
+      background-color: #853082;
+      color: #ffffff;
+    }
+
+    .d4 {
+      background-color: #A89C9A;
+    }
+
+    .d5 {
+      background-color: #ce1a35;
+    }
+
+    .d6 {
+      background-color: gainsboro;
+    }
+
+    .d7 {
+      background-color: #f58b57;
+    }
+
+    .d8 {
+      background-color: #285061;
+      color: #40b16d;
+    }
+
+    .d9 {
+      background-color: #0202F7;
+      color: #d5b036;
+    }
+
+    .d10 {
+      background-color: black;
+      color: white;
+    }
+
+    .albums .d1:hover {
+      background-color: #e8982e;
+      color: #411218;
+    }
+
+    .albums .d2:hover {
+      background-color: #c3ab14;
+      color: #633119;
+    }
+
+    .albums .d3:hover {
+      background-color: #ffffff;
+      color: #853082;
+    }
+
+    .albums .d4:hover {
+      background-color: black;
+      color: #A89C9A;
+    }
+
+    .albums .d5:hover {
+      background-color: black;
+      color: #ce1a35;
+    }
+
+    .albums .d6:hover {
+      background-color: black;
+      color: gainsboro;
+    }
+
+    .albums .d7:hover {
+      background-color: black;
+      color: #f58b57;
+    }
+
+    .albums .d8:hover {
+      background-color: #40b16d;
+      color: #285061;
+    }
+
+    .albums .d9:hover {
+      background-color: #d5b036;
+      color: #0202F7;
+    }
+
+    .albums .d10:hover {
+      background-color: white;
+      color: black;
+    }
+
+    #bio-info {
+      margin: auto;
+      width: 90%;
+      background-color: gainsboro;
+      text-align: center;
+      font-family: "Oswald", sans-serif;
+      font-size:25px;
+      margin-bottom: 15px;
+      padding: 10px;
+      padding-top: 0px;
+    }
+
+    a:visited {
+      color: blue;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .container {
+        display: none;
+      }
+
+      #title {
+        margin-top: 0;
+        margin-bottom: 20px;
+      }
+
+      #tribute-info {
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px;
+        min-width: 290px;
+      }
+
+      .albums {
+        font-size: 20px;
+        width: 90%;
+        margin: 0 auto;
+        min-width: 290px;
+        grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
+        align-content: center;
+      }
+
+      #bio-info {
+        width: 90%;
+        min-width: 290px;
+      }
         </style>
-    </head>
+<!DOCTYPE html>
+<html>
 
-    <body>
-        <main id="main">
+<head>
+  <title>
+    Kayne West Tribute
+  </title>
+  <meta charset="UTF-8">
+  <meta name="author" content="Matthew Davis">
+  <meta name="discription" content="Kanye West Tribute">
+  <meta name="viewport" content="width-device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 
-            <nav class="container">
-            <a class="nav1-preface" href="#preface">Preface</a>
-            <a class="nav2-albums" href="#album-title">Albums</a>
-            <a class="nav3-bio"  href="#biography">Biography</a>
-            <a class="nav4-footer"  href="#tribute-link">Additonal Information</a>
-            </nav>
+</head>
 
+<body>
+  <main id="main">
 
-            <h1 id="title">Kanye West:<br/> <i>The Most Influential</i></h1>
+    <nav class="container">
+      <a href="#preface">Preface</a>
+      <a href="#album-title">Albums</a>
+      <a href="#biography">Biography</a>
+      <a href="#tribute-link">Additonal Information</a>
+    </nav>
 
-            <div id="img-div">
-                <img id="image" src="kanye-stage2.jpg" alt="Kanye West during his St. Palbo tour performing Father Stretch My Hands Pt.1">
+    <h1 id="title">Kanye West:<br /> <i>The Most Influential</i></h1>
 
-                <p id="img-caption">
-                Kanye West performing "Father Stretch My Hands Pt.1" during the infamous St. Pablo tour.
-                </p>
-            </div>
+    <div id="img-div">
+      <img id="image" src="kanye-stage2.jpg" alt="Kanye West during his St. Palbo tour performing Father Stretch My Hands Pt.1">
 
-            <h2 id="preface" >Preface</h2>
+      <p id="img-caption">
+        Kanye West performing "Father Stretch My Hands Pt.1" during the infamous St. Pablo tour.
+      </p>
+    </div>
 
-            <p id="tribute-info">
-                <br>Sales. Influence. Success. Kanye West hits every mark that makes somebody one of the greatest artists of all time.</br>
-                <br>Kanye West is unarguably the definition of a successful artist. He rocketed his way onto the music mainstream back in 2004 with his debut album, ‘The College Dropout,’ and has maintained relevance on the music scene and beyond ever since. Whether it is his braggadocious attitude, his crazy antics, or just his seeming inability to fail, people always find a reason to hate on him or knock him. However, all of the knocks people have against him are never rooted in his lack of artistic ability. </br>
-                <br>Denying Kanye’s artistic genius is simply ignorant, and today I am going to try to enlighten you, the reader, on why the title for greatest artist of the 21st century goes to the one and only Mr. West.</br>
-                <br>The reason why Kanye is the greatest artist of this century is because of how well he checks the boxes of what it takes to be a great artist. Like I said in the opening, there are three things that make an artist great: sales, influence, and success. While he may not be the best artist for some of the categories, even though he is for one of them, his total scores across the board are the reason that he is a cut above the rest of the field. </br>
-            </p>
+    <h2 id="preface">Preface</h2>
 
+    <p id="tribute-info">
+      <br>Sales. Influence. Success. Kanye West hits every mark that makes somebody one of the greatest artists of all time.</br>
+      <br>Kanye West is unarguably the definition of a successful artist. He rocketed his way onto the music mainstream back in 2004 with his debut album, ‘The College Dropout,’ and has maintained relevance on the music scene and beyond ever since. Whether it is his braggadocious attitude, his crazy antics, or just his seeming inability to fail, people always find a reason to hate on him or knock him. However, all of the knocks people have against him are never rooted in his lack of artistic ability. </br>
+      <br>Denying Kanye’s artistic genius is simply ignorant, and today I am going to try to enlighten you, the reader, on why the title for greatest artist of the 21st century goes to the one and only Mr. West.</br>
+      <br>The reason why Kanye is the greatest artist of this century is because of how well he checks the boxes of what it takes to be a great artist. Like I said in the opening, there are three things that make an artist great: sales, influence, and success. While he may not be the best artist for some of the categories, even though he is for one of them, his total scores across the board are the reason that he is a cut above the rest of the field. </br>
+    </p>
 
-            <h3 id="album-title">Albums</h3>
+    <h3 id="album-title">Albums</h3>
 
-            <div class="albums">
-                <div class="d1 :hover"> The College Drop Out</div>
-                <div class="d2">Late Registration</div>
-                <div class="d3">Graduation</div>
-                <div class="d4">808s & Heartbreak</div>
-                <div class="d5">My Beautiful Dark Twisted Fantasy</div>
-                <div class="d6">Yeezus</div>
-                <div class="d7">The Life of Pablo</div>
-                <div class="d8">Ye</div>
-                <div class="d9">Jesus is King</div>
-                <div class="d10">Donda</div>
-            </div>
+    <div class="albums">
+      <div class="d1 :hover"> The College Drop Out</div>
+      <div class="d2">Late Registration</div>
+      <div class="d3">Graduation</div>
+      <div class="d4">808s & Heartbreak</div>
+      <div class="d5">My Beautiful Dark Twisted Fantasy</div>
+      <div class="d6">Yeezus</div>
+      <div class="d7">The Life of Pablo</div>
+      <div class="d8">Ye</div>
+      <div class="d9">Jesus is King</div>
+      <div class="d10">Donda</div>
+    </div>
 
-            <h4 id="biography">Biography</h4>
-            <p id="bio-info">Kanye Omari West (born June 8, 1977) is an American rapper, singer, songwriter, record producer, businessman, and fashion designer.</p>
-            <p id="bio-info">Born in Atlanta and raised in Chicago, West gained notoriety as a producer for Roc-A-Fella Records in the early 2000s, producing 
-                singles for several popular artists. Intent on pursuing a solo career as a rapper, West released his debut album, The College Dropout (2004), 
-                to critical and commercial success, and founded the record label GOOD Music. He went onto experiment with a variety of musical genres on subsequent 
-                acclaimed albums, including Late Registration (2005), Graduation (2007), and 808s & Heartbreak (2008). Drawing inspiration from maximalism and 
-                minimalism respectively, his fifth album My Beautiful Dark Twisted Fantasy (2010) and sixth album Yeezus (2013) were also released to critical 
-                and commercial successes. West also diversified musical styles on The Life of Pablo (2016) and Ye (2018), and explored Christian music on Jesus 
-                Is King (2019). After a series of delays, West released his highly anticipated tenth album, Donda (2021). West's discography also includes the 
-                full-length collaborative albums Watch the Throne (2011) with Jay-Z and Kids See Ghosts (2018) with Kid Cudi. </p>
-            <p id="bio-info">West's outspoken views and life outside of music have received significant media coverage. He has been a frequent source of 
-                controversy for his conduct at award shows, on social media, and in other public settings, as well as for his comments on the music and 
-                fashion industries, U.S. politics, and race. West is often lauded as one of hip hop's greatest artists, with his music being recognized 
-                as some of the best-selling and most critically acclaimed in hip hop history. In 2020, he ran an independent presidential campaign that 
-                advocated for a consistent life ethic. His Christian faith, as well as his marriage to television personality Kim Kardashian, have also 
-                been sources of media attention. As a fashion designer, he has collaborated with Nike, Louis Vuitton, and A.P.C. on both clothing and 
-                footwear, and have most prominently resulted in the Yeezy collaboration with Adidas beginning in 2013. He is the founder and head of the 
-                creative content company DONDA.West is one of the world's best-selling music artists, with more than 160 million records sold worldwide. 
-                He has won a total of 22 Grammy Awards, making him one of the most awarded artists of all time. Among his other awards are the Billboard 
-                Artist Achievement Award, a joint-record three Brit Awards for Best International Male Solo Artist and the Michael Jackson Video Vanguard 
-                Award. Six of his albums were included on Rolling Stone's 2020 500 Greatest Albums of All Time list; the same publication named him one of 
-                the 100 Greatest Songwriters of All Time. West is the tied holder for the most albums (four) topping the annual Pazz & Jop critic poll, a 
-                distinction he shares with Bob Dylan. Time magazine named him one of the 100 most influential people in the world in 2005 and 2015. </p>
+    <h4 id="biography">Biography</h4>
+    <p id="bio-info">Kanye Omari West (born June 8, 1977) is an American rapper, singer, songwriter, record producer, businessman, and fashion designer.</p>
+    <p id="bio-info">Born in Atlanta and raised in Chicago, West gained notoriety as a producer for Roc-A-Fella Records in the early 2000s, producing
+      singles for several popular artists. Intent on pursuing a solo career as a rapper, West released his debut album, The College Dropout (2004),
+      to critical and commercial success, and founded the record label GOOD Music. He went onto experiment with a variety of musical genres on subsequent
+      acclaimed albums, including Late Registration (2005), Graduation (2007), and 808s & Heartbreak (2008). Drawing inspiration from maximalism and
+      minimalism respectively, his fifth album My Beautiful Dark Twisted Fantasy (2010) and sixth album Yeezus (2013) were also released to critical
+      and commercial successes. West also diversified musical styles on The Life of Pablo (2016) and Ye (2018), and explored Christian music on Jesus
+      Is King (2019). After a series of delays, West released his highly anticipated tenth album, Donda (2021). West's discography also includes the
+      full-length collaborative albums Watch the Throne (2011) with Jay-Z and Kids See Ghosts (2018) with Kid Cudi. </p>
+    <p id="bio-info">West's outspoken views and life outside of music have received significant media coverage. He has been a frequent source of
+      controversy for his conduct at award shows, on social media, and in other public settings, as well as for his comments on the music and
+      fashion industries, U.S. politics, and race. West is often lauded as one of hip hop's greatest artists, with his music being recognized
+      as some of the best-selling and most critically acclaimed in hip hop history. In 2020, he ran an independent presidential campaign that
+      advocated for a consistent life ethic. His Christian faith, as well as his marriage to television personality Kim Kardashian, have also
+      been sources of media attention. As a fashion designer, he has collaborated with Nike, Louis Vuitton, and A.P.C. on both clothing and
+      footwear, and have most prominently resulted in the Yeezy collaboration with Adidas beginning in 2013. He is the founder and head of the
+      creative content company DONDA.West is one of the world's best-selling music artists, with more than 160 million records sold worldwide.
+      He has won a total of 22 Grammy Awards, making him one of the most awarded artists of all time. Among his other awards are the Billboard
+      Artist Achievement Award, a joint-record three Brit Awards for Best International Male Solo Artist and the Michael Jackson Video Vanguard
+      Award. Six of his albums were included on Rolling Stone's 2020 500 Greatest Albums of All Time list; the same publication named him one of
+      the 100 Greatest Songwriters of All Time. West is the tied holder for the most albums (four) topping the annual Pazz & Jop critic poll, a
+      distinction he shares with Bob Dylan. Time magazine named him one of the 100 most influential people in the world in 2005 and 2015. </p>
 
+    <a href="https://en.wikipedia.org/wiki/Kanye_West" id="tribute-link" target="_blank">
+      Click here for more information about Kanye.
+    </a>
 
+  </main>
+</body>
 
-            <a href="https://en.wikipedia.org/wiki/Kanye_West" id="tribute-link" target="_blank">
-                Click here for more information about Kanye.
-            </a>
-
-        </main>
-    </body>
 </html>
